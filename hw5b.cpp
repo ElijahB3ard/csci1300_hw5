@@ -131,7 +131,6 @@ int sumVector(vector<int> v)
 int main()
 {
 // Problem 1
-{
     // Define variables
     vector<int> sales_log;
     int sales = 0;
@@ -162,9 +161,7 @@ int main()
     // Output
     cout << "Days logged: " << days << endl;
     cout << "Total sales: " << total_sales << endl;
-}
 // Problem 2
-{
     // Define variables
     vector<int> sales2;
     int sale2, size2, index2;
@@ -193,9 +190,7 @@ int main()
     // Output
     cout << "Best day: " << (index2 + 1) << endl;
     cout << "Sales: " << sales2[index2] << " gold" << endl;
-}
 // Problem 3
-{
     // Define variables
     int daily_figures[100], regions, sale3, region_total, grand_total;
     int days3 = 3;
@@ -235,9 +230,7 @@ int main()
 
     // Output
     cout << "Grand total: " << grand_total << endl;
-}
 // Problem 4
-{
     // cin reset
     cin.ignore(1000, '\n');
 
@@ -260,9 +253,7 @@ int main()
     cout << "Original: " << original_announcement << endl;
     cout << "Announcement: " << new_announcement << endl;
     cout << "Length: " << length << endl;
-}
 // Problem 5
-{
     // Define variables
     int budget, choice;
 
@@ -327,9 +318,7 @@ int main()
 
     // Output
     cout << "Final budget: " << budget << " gold" << endl;
-}
 // Problem 6
-{
     // Define variables
     vector<int> sales6, high_performers;
     int threshold = 100;
@@ -362,9 +351,7 @@ int main()
         cout << high_performers[i] << " gold" << endl;
     }
     cout << "Products above 100 gold: " << high_performers.size() << endl;
-}
 // Problem 7
-{
     // vector<int> nums;
     // nums.push_back(10);
     // nums.push_back(20)
@@ -384,5 +371,4 @@ int main()
 
     // Output
     cout << "Sum: " << sumVector(nums) << endl;
-}
 }
