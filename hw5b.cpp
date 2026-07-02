@@ -346,7 +346,7 @@ int main()
     cout << "--- High Performers ---" << endl;
 
     // Output
-    for (int i = 0; i < high_performers.size(); i++)
+    for (int i = 0; i < static_cast<int>(high_performers.size()); i++)
     {
         cout << high_performers[i] << " gold" << endl;
     }
