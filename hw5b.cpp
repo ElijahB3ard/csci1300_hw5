@@ -95,7 +95,7 @@ vector<int> aboveThreshold(vector<int> sales, int threshold)
     // Populate high performers vector
     for (int i = 0; i < static_cast<int>(sales.size()); i++)
     {
-        if (sales[i] >= 100)
+        if (sales[i] > 100)
         {
             high_performers.push_back(sales[i]);
         }
@@ -311,6 +311,7 @@ int main()
                 break;
             default: // Invalid input
                 cout << "Invalid option." << endl;
+                cout << "Closing the Joja terminal." << endl;
                 choice = 5;
         }
 
