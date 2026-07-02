@@ -10,7 +10,7 @@ int totalSales(vector<int> sales)
     int total = 0;
 
     // Sum sales from each day
-    for (int i = 0; i < sales.size(); i++)
+    for (int i = 0; i < static_cast<int>(sales.size()); i++)
     {
         total += sales[i];
     }
@@ -27,7 +27,7 @@ int bestDayIndex(vector<int> sales)
     int max = sales[0];
 
     // Find index of max
-    for (int i = 1; i < sales.size(); i++)
+    for (int i = 1; i < static_cast<int>(sales.size()); i++)
     {
         if (sales[i] > max)
         {
@@ -63,7 +63,7 @@ string toUpperCase(string text)
     int converstion_factor = 'a' - 'A';
 
     // Loop through each character
-    for (int i = 0; i < text.length(); i++)
+    for (int i = 0; i < static_cast<int>(text.length()); i++)
     {
     // Convert to uppercase
         if (text[i] >= 97 && text[i] <= 122)
@@ -93,7 +93,7 @@ vector<int> aboveThreshold(vector<int> sales, int threshold)
     vector<int> high_performers;
 
     // Populate high performers vector
-    for (int i = 0; i < sales.size(); i++)
+    for (int i = 0; i < static_cast<int>(sales.size()); i++)
     {
         if (sales[i] >= 100)
         {
@@ -118,7 +118,7 @@ int sumVector(vector<int> v)
     int total = 0; // Fixed: added ';'
 
     // Calculate sum
-    for (int i = 0; i < v.size(); i++) // Fixed: changed bounds 'i <= v' -> 'i < v'
+    for (int i = 0; i < static_cast<int>(v.size()); i++) // Fixed: changed bounds 'i <= v' -> 'i < v', must add static_cast<int>() for -Wall and -Werror
     {
         total += v[i];
     }
