@@ -311,6 +311,7 @@ int main()
                 break;
             default: // Invalid input
                 cout << "Invalid option." << endl;
+                choice = 5;
         }
 
     } 
