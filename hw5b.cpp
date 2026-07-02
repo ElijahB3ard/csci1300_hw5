@@ -285,7 +285,7 @@ int main()
                 }
                 else
                 {
-                    cout << "Not enough budget to restock." << endl;
+                    cout << "Not enough budget for advertising." << endl;
                 }
                 break;
             case 2: // Restocking
@@ -311,10 +311,7 @@ int main()
                 break;
             default: // Invalid input
                 cout << "Invalid option." << endl;
-                cout << "Closing the Joja terminal." << endl;
-                choice = 5;
         }
-
     } 
     while (choice != 5);
 
